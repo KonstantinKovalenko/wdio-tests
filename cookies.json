@@ -1,0 +1,135 @@
+[
+  {
+    "domain": "github.com",
+    "expiry": 1776687824,
+    "httpOnly": true,
+    "name": "__Host-user_session_same_site",
+    "path": "/",
+    "sameSite": "Strict",
+    "secure": true,
+    "value": "S-wA39qSBkt1VMgkB4ujEKdoONS0osMFPWcd7sIq_BpqyMck"
+  },
+  {
+    "domain": "github.com",
+    "expiry": 1783254224,
+    "httpOnly": true,
+    "name": "saved_user_sessions",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "14038503%3AS-wA39qSBkt1VMgkB4ujEKdoONS0osMFPWcd7sIq_BpqyMck"
+  },
+  {
+    "domain": ".github.com",
+    "httpOnly": false,
+    "name": "preferred_color_mode",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "light"
+  },
+  {
+    "domain": ".github.com",
+    "expiry": 1807014209,
+    "httpOnly": false,
+    "name": "_octo",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "GH1.1.945526437.1775478204"
+  },
+  {
+    "domain": ".github.com",
+    "httpOnly": false,
+    "name": "cpu_bucket",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "xlg"
+  },
+  {
+    "domain": "github.com",
+    "expiry": 1807014209,
+    "httpOnly": true,
+    "name": "_device_id",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "6e56591130c73613a498a583b7001c3e"
+  },
+  {
+    "domain": "github.com",
+    "expiry": 1776687824,
+    "httpOnly": true,
+    "name": "user_session",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "S-wA39qSBkt1VMgkB4ujEKdoONS0osMFPWcd7sIq_BpqyMck"
+  },
+  {
+    "domain": ".github.com",
+    "httpOnly": false,
+    "name": "tz",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "Europe%2FKiev"
+  },
+  {
+    "domain": "github.com",
+    "httpOnly": true,
+    "name": "tz",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "Europe%2FKiev"
+  },
+  {
+    "domain": ".github.com",
+    "httpOnly": false,
+    "name": "color_mode",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D"
+  },
+  {
+    "domain": ".github.com",
+    "expiry": 1807014224,
+    "httpOnly": true,
+    "name": "logged_in",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "yes"
+  },
+  {
+    "domain": "github.com",
+    "httpOnly": true,
+    "name": "last_write_ms",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "1775478223386"
+  },
+  {
+    "domain": "github.com",
+    "httpOnly": true,
+    "name": "_gh_sess",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "ncW0gnMmYOhz9ouk9VcBv5mGiqiyLtNYixpKK9OmZ8bGMfD3Wb%2BZfwnYS%2BVEIjyxDNWah%2FzWGycGqhqIKqDuVJhrLvmYfNp9KMhJtyWsNdgjr6WsKAN5v9QmaVQVpFYe%2FkOZvw44Rv5yk3Ze3emopvEAnF%2F%2F7jmM2MSzHAJW1Q6vStA0YewSg%2FIPjyLyej2R%2FcKuush8ABWTAyLxtytURvGDgRYv7xHVsZgRCdbmKwf4Q0wkta7V%2BcrOxfb6ydi2UplBcFizZh%2BOWZF2KY50l3ZGY%2Bnsr0jS1UAWLQMiOcrmFWuZpi1%2Fr0RBojOA%2F6bTs%2BzZLOZroI4RYYjQTdAbq%2BZ%2FmDfJws3b307RqduE44GKFZjt8Vz34%2FAojg11sF3%2Fnip8MS3uSUtbtF232CFHJz57PuwujpHwe9Q9bn%2FyMBGQEEjHdcpKykgw8rHVS65wEGhAjhRNUEh6IM0g1CeLcTpnNi5I3ZzkRwV0YvyXrIth7c1bct2QRbdCoSUTpwc3VaPhv%2FCuIaJ1z68MKmJfhSpbybaPUEpzU0IwEYAb3IC4ToNSbZyS2ei54LVXZsvCq18DmlO0bsQg8poMX7ARTwYYIkjVnNKLshchYTYwo46l1WQpBPG4cDzlXdFHYdbYODiaxhz27Y6fVfU6SPxCaBw%2BDzS%2FEkf12lnDQqQsjtnIbDuDl1LXwaIrzUrLzDdD5QHq3ghzSj1KkQdZBwOxWvr7xApsZDjwO58ovUHY71O2Fs3n0L0IAguPgloivXGnV84C8SIkbhkEEUY7Z9vQa4OpCDP%2FMd4Xm8ApQALzC%2FAkRkSXEqP6GBL29xPi92bhJjFfg0sPZsTOMd6oj0illoh2GEDt3R5UhWo6JOIdN3Q0JT0uHkJLyC1t7Y11I%2B3lyKpMkSIojzomI%2FXSZA5VpwTotq6TBy6muO7RVTan279dqYbdXs7mz0JHuIdpgEBffPPgMatpv%2FgueFkohczC%2FZ9ZPOAy7ViF1mVWS10XaDOTOtM3wdBJSfKRvf19CKW5MJDOL4Zrxtv4fZbY7pAU47dWWmO2HUpuxfg4FvHUBdw%3D--wyhSJ7JOgvxj4eL7--3XUXsRcAEM4yM2eocn3fDw%3D%3D"
+  },
+  {
+    "domain": ".github.com",
+    "expiry": 1807014224,
+    "httpOnly": true,
+    "name": "dotcom_user",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "KonstantinKovalenko"
+  }
+]
