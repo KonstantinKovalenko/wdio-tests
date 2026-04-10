@@ -20,8 +20,8 @@ describe('Homework for lesson 25', () => {
 
         await GitPage.clickOnCountrisSpanBtn()
         await GitPage.addCountriesSearchInputValue("uk")
-        await GitPage.countriesSpanTip.click()
-        await GitPage.receiveCheckBox.click()
+        await GitPage.clickOnCountriesSpanTip()
+        await GitPage.clickOnReceiveCheckBox()
 
         await browser.pause(1000)
         if (await GitPage.checkForErrors()){
@@ -33,7 +33,20 @@ describe('Homework for lesson 25', () => {
         else {
             await GitPage.clickOnCreateAccountBtn()
         }
-        
+    });
+
+    it("Page Object example 2", async () => {
+        await browser.url('https://github.com');
+
+        await GitPage.clickOnEnterpriseSpanBtn()
+        await browser.pause(1000)
+        await GitPage.clickOnEnterpriseLink()
+
+        const captionText = await GitPage.welcomeEnterpriseCaption.getText()
+        expect(captionText).toBe("The AI-powered developer platform for the agent-ready enterprise")
+
+        await GitPage.clickOnStartTrialEnterpriseLink()
+        await browser.pause(1000)
     });
 
 });
@@ -42,7 +55,8 @@ describe('Homework for lesson 25', () => {
 //1 - регистрируемся на гитхабе, проверяем есть ли надпись create your free account, 
 //заполняем example12341@gmail.com, Swallowed123, Chchch123-star, ставим галочку, клацаем на регистрацию // DONE
 //2 - заходим на главную, нажимаем энтерпрайз - энтерпрайз платформ
-//проверяем есть ли надпись The AI-powered developer platform for the agent-ready enterprise, кликаем на старт триал
+//проверяем есть ли надпись The AI-powered developer platform for the agent-ready enterprise, кликаем на старт триал // DONE
+
 //3 - скролл инто вью на кнопку сабскрайб, проверяем кликабельность, клацаем, проверяем урл, и существование заголовка Get our developer newsletter
 //вводим емэйл, кликаем по выбору страны и выбираем что заходтим, ставим галочку, потом тыцаем сабскрайб и проверяем что есть текст
 //4 - поиск - клик - поиск act - нажимаем тултип и проверяем, что слово акт есть в одном из результатов
