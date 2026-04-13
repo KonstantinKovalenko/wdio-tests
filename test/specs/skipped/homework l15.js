@@ -31,3 +31,4 @@ describe.skip('Homework for repeating already learned l15', () => {
 });
 
 //работаем с селекторами
+//ещё полезный xpath для выбора из списка опций '//select[@id="country"]//option[@value="BZ"]'

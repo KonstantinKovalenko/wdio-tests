@@ -1,6 +1,6 @@
 import { browser, expect } from '@wdio/globals'
 import assert from "assert/strict"
-import LoginPage from "../pages/hero.main.page.js"
+import LoginPage from "../../pages/heroupp/hero.main.page"
 
 describe.skip('Webdriverio main page', () => {
     xit("should have correct title", async () => {

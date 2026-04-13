@@ -1,6 +1,6 @@
 import { browser, expect } from '@wdio/globals'
-import DouMainPage from '../pages/dou.main.page';
-import GamedevPage from '../pages/dou.gamedev.page';
+import DouMainPage from '../../pages/dou/dou.main.page';
+import GamedevPage from '../../pages/dou/dou.gamedev.page';
 
 describe.skip('Homework for lesson 23', () => {
     it("Page Object examples", async () => {

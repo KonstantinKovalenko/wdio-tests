@@ -1,5 +1,5 @@
 import { browser, expect } from '@wdio/globals'
-import GitPage from './../pages/git.page'
+import GitPage from '../../pages/github/git.page'
 
 describe('Homework for lesson 25', () => {
     xit("Page Object example 1", async () => {
@@ -18,7 +18,7 @@ describe('Homework for lesson 25', () => {
         await GitPage.addPasswprdInputValue(password)
         await GitPage.addLoginInputValue(login)
 
-        await GitPage.clickOnCountrisSpanBtn()
+        await GitPage.clickOnCountriesSpanBtn()
         await GitPage.addCountriesSearchInputValue("uk")
         await GitPage.clickOnCountriesSpanTip()
         await GitPage.clickOnReceiveCheckBox()
@@ -35,7 +35,7 @@ describe('Homework for lesson 25', () => {
         }
     });
 
-    it("Page Object example 2", async () => {
+    xit("Page Object example 2", async () => {
         await browser.url('https://github.com');
 
         await GitPage.clickOnEnterpriseSpanBtn()
@@ -49,6 +49,51 @@ describe('Homework for lesson 25', () => {
         await browser.pause(1000)
     });
 
+    xit("Page Object example 3", async () => {
+        await browser.url('https://github.com');
+
+        await GitPage.subscribeLink.scrollIntoView()
+        expect(await GitPage.subscribeLink.isClickable()).toBe(true)
+        await GitPage.clickOnSubscribeLink()
+        expect(await browser.getUrl()).toBe("https://github.com/newsletter")
+        expect(await GitPage.welcomeSubscribeCaption.getText()).toBe('Get our developer newsletter')
+
+        await GitPage.addEmailSubscribeInputValue("asdqweert123@gmail.com")
+
+        await GitPage.countriesSelect.click()
+        await browser.pause(1000)
+        await GitPage.countriesSelect.selectByAttribute('value', 'UA')
+        const value = await GitPage.countriesSelect.getValue()
+        expect(value).toBe('UA')
+        await GitPage.clickOnPersonalInfoCheckBox()
+        await GitPage.clickOnSubscribeBtn()
+    }); 
+
+    it("Page Object example 4", async () => {
+        const searchWord = "act"
+        const errors = []
+
+        await GitPage.open()
+
+        await GitPage.clickOnSearchBtn()
+        await GitPage.addSearchInputValue(searchWord)
+        await browser.pause(1000)
+        await GitPage.clickOnSearchResultTip(searchWord)
+       
+        let searchResultArray = await GitPage.getSearchResultArray()
+        for (let i = 0; i < searchResultArray.length; i++){
+            const text = await searchResultArray[i].getText()                                          
+            const title = text.split('\n')[0]
+
+            if(!title.toLowerCase().includes(searchWord)){
+                errors.push(`Title ${i + 1} does not contain ${searchWord}`)
+            }
+        }
+
+        if (errors.length > 0){
+            throw new Error('\n' + errors.join('\n'))
+        }
+    });
 });
 
 //финальное задание
@@ -56,9 +101,9 @@ describe('Homework for lesson 25', () => {
 //заполняем example12341@gmail.com, Swallowed123, Chchch123-star, ставим галочку, клацаем на регистрацию // DONE
 //2 - заходим на главную, нажимаем энтерпрайз - энтерпрайз платформ
 //проверяем есть ли надпись The AI-powered developer platform for the agent-ready enterprise, кликаем на старт триал // DONE
-
 //3 - скролл инто вью на кнопку сабскрайб, проверяем кликабельность, клацаем, проверяем урл, и существование заголовка Get our developer newsletter
-//вводим емэйл, кликаем по выбору страны и выбираем что заходтим, ставим галочку, потом тыцаем сабскрайб и проверяем что есть текст
-//4 - поиск - клик - поиск act - нажимаем тултип и проверяем, что слово акт есть в одном из результатов
+//вводим емэйл, кликаем по выбору страны и выбираем что заходтим, ставим галочку, потом тыцаем сабскрайб //done
+//4 - поиск - клик - поиск act - нажимаем тултип и проверяем, что слово акт есть во всех тайтлах результатов, если нет - бросаем ошибку // done
+
 //5 - клик pricing проверяем наличие Try the Copilot-powered platform, скроллим до ссылки compare all features, клацаем на неё
 //проверяем есть ли заголовок на видимом экране Compare features

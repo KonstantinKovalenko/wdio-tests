@@ -1,6 +1,6 @@
-import DouMainPage from "../pages/dou.main.page.js"
-import GameDevPage from "../pages/dou.gamedev.page.js"
-import GameDevTopRatesPage from "../pages/dou.gamedev.toprates.page.js"
+import DouMainPage from "../../pages/dou/dou.main.page.js"
+import GameDevPage from "../../pages/dou/dou.gamedev.page.js"
+import GameDevTopRatesPage from "../../pages/dou/dou.gamedev.toprates.page.js"
 
 describe('Webdriverio main page', () => {
 

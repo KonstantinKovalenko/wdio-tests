@@ -161,4 +161,4 @@ describe('Homework for test-cases l19', () => {
 //4 - простейшая sql инъекция SELECT * FROM Users WHERE Username='$username' AND Password='$password' // non-functional security negative // done
 //5 - sign up с некорректным мылом // negative // done
 
-//создать тест кейс с использованием поиска и проверки выданного контента + проверочное слово должно содержаться в урл // done
+//6(свой) - создать тест кейс с использованием поиска и проверки выданного контента + проверочное слово должно содержаться в урл // done
