@@ -69,7 +69,7 @@ describe('Homework for lesson 25', () => {
         await GitPage.clickOnSubscribeBtn()
     }); 
 
-    it("Page Object example 4", async () => {
+    xit("Page Object example 4", async () => {
         const searchWord = "act"
         const errors = []
 
@@ -93,6 +93,21 @@ describe('Homework for lesson 25', () => {
         if (errors.length > 0){
             throw new Error('\n' + errors.join('\n'))
         }
+
+        
+    });
+
+    it("Page Object example 5", async () => {
+        await GitPage.open()
+
+        await GitPage.clickOnPricingLink()
+        expect(await GitPage.welcomePrisingCaption.getText()).toBe('Try the Copilot-powered platform')
+        await GitPage.compareFeaturesLink.scrollIntoView();
+        await browser.pause(1000)
+        await GitPage.compareFeaturesLink.click()
+        let text = await GitPage.compareFeaturesCaption.getText()
+        expect(text).toBe('Compare features')
+        expect(GitPage.compareFeaturesCaption).toBeDisplayedInViewport()
     });
 });
 
@@ -104,6 +119,5 @@ describe('Homework for lesson 25', () => {
 //3 - скролл инто вью на кнопку сабскрайб, проверяем кликабельность, клацаем, проверяем урл, и существование заголовка Get our developer newsletter
 //вводим емэйл, кликаем по выбору страны и выбираем что заходтим, ставим галочку, потом тыцаем сабскрайб //done
 //4 - поиск - клик - поиск act - нажимаем тултип и проверяем, что слово акт есть во всех тайтлах результатов, если нет - бросаем ошибку // done
-
 //5 - клик pricing проверяем наличие Try the Copilot-powered platform, скроллим до ссылки compare all features, клацаем на неё
-//проверяем есть ли заголовок на видимом экране Compare features
+//проверяем есть ли заголовок на видимом экране Compare features // done

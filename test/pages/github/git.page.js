@@ -21,10 +21,14 @@ class GitPage{
     get enterpriseLink () {return $('//*[contains(text(), "Enterprise platform") and @class="NavLink-module__title__Q7t0p"]')}
     get startTrialEnterpriseLink() {return $('//*[@href="https://github.com/get_started?with=enterprise&locale=en-US" and @data-ref="hero-primary-action-3ctc8Gu0mjiIhwW3nxsjNf"]')}
     get subscribeLink () {return $('[class="btn-mktg tmp-mb-4 btn-muted-mktg"]')}
+    get pricingLink () {return $('[href="https://github.com/pricing"]')}
+    get compareFeaturesLink () {return $('[href="#compare-features"]')}
 
     get welcomeSignUpCaption () {return $('.signups-rebrand__container-content h1')}
     get welcomeEnterpriseCaption () {return $('#hero-section-brand-heading')}
     get welcomeSubscribeCaption () {return $('[class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--3___wsITu Primer_Brand__Heading-module__Heading--textWrap-balance___AOKvC tmp-mb-4 ContactSalesTemplate-module__heading__HSt5u"]')}
+    get welcomePrisingCaption () {return $('[class="h2-mktg"]')}
+    get compareFeaturesCaption () {return $('[class="d-md-block p-responsive container-xl text-center tmp-my-8 tmp-my-md-9 js-compare-features-item"]')}
     get #searchTipsArray () {return $$('[class="ActionListItem-label text-normal"]')}
     get #searchResultsArray () {return $$('[class="Result-module__Result__Up5vk"]')}
     get errorsArray () {return $$('.error')}
@@ -79,6 +83,10 @@ class GitPage{
     
     async clickOnStartTrialEnterpriseLink(){
         await this.startTrialEnterpriseLink.click()
+    }
+
+    async clickOnPricingLink(){
+        await this.pricingLink.click()
     }
 
     async addEmailInputValue (value){
