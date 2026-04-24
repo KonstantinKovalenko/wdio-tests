@@ -1,7 +1,7 @@
-# WDIO Tests (Trainee Automation Project)
+# WDIO Tests (WebdriverIO Learning Project)
 
 ## 📌 Overview & Goals
-This is a trainee-level UI automation testing project built as part of a WebdriverIO course (YouTube series, 25 lessons).
+This is a UI automation testing project built as part of a WebdriverIO trainee course (YouTube series, 25 lessons).
 
 The goal of this project is to learn and practice:
 - Web UI test automation using WebdriverIO
@@ -43,9 +43,9 @@ Tests are written as introductory examples and focus on learning WDIO structure 
 ---
 ## 📁 Project Structure
 
-    /test        - test specs  
-    /pageobjects - page object models (if used)  
-    /wdio.conf.js - WebdriverIO configuration  
+    /test/specs        - test cases
+    /test/pages        - page object models
+    /wdio.conf.js      - WebdriverIO configuration  
 ---
 ## 👤 Author
 
@@ -53,6 +53,4 @@ Konstantin Kovalenko
 * GitHub: https://github.com/KonstantinKovalenko  
 * LinkedIn: [www.linkedin.com/in/kostyantyn-kovalenko/](https://www.linkedin.com/in/kostyantyn-kovalenko/)
 * Email: chvyaka.kk@gmail.com
-* Telegram: @kovakost  
-
-#### v. 1.0
+* Telegram: @kovakost
