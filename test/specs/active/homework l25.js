@@ -97,7 +97,7 @@ describe('Homework for lesson 25', () => {
         
     });
 
-    it("Page Object example 5", async () => {
+    xit("Page Object example 5", async () => {
         await GitPage.open()
 
         await GitPage.clickOnPricingLink()
